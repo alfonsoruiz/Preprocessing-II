@@ -3,10 +3,15 @@
     nav {
         padding: 30px 0;
         .dashed-border-bottom();
-        
         & .container {
             .add-flex();
             .flex-layout(space-between; center);
+            @media @phone {
+                flex-direction: column;
+            }
+            & h1 {
+                margin-bottom: 10px;
+            }
         }
 
         & .nav-links a{

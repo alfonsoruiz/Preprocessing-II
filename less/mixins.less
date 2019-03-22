@@ -1,14 +1,22 @@
 // Mixins in here
-.add-flex(@direction: row; @justify: start) {
+.add-flex(@direction: row) {
     display: flex;
     flex-direction: @direction;
+}
+
+.flex-layout(@justify; @align) {
     justify-content: @justify;
+    align-items: @align;
 }
 
-.flex-center-y {
-    align-items: center;
+.dashed-border-bottom {
+    border-bottom: 2px dashed @silver;
 }
 
-.dashed-border {
-    border: 2px dashed @silver;
+.signup-btn(@bg-color, @color, @radius: 0) {
+    padding: 10px 20px;
+    background-color: @bg-color;
+    border-radius: @radius;
+    color: @color;
+    font-size: 2rem;
 }

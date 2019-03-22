@@ -1,8 +1,5 @@
-.flex-center-y {
-  align-items: center;
-}
-.border {
-  border: 2px dashed #C0C0C0;
+.dashed-border-bottom {
+  border-bottom: 2px dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -255,4 +252,15 @@ a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 10px 20px;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

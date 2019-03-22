@@ -2,7 +2,8 @@
 
   header {
     padding-bottom: 20px;
-    border-bottom: @dashed-border;
+    .dashed-border-bottom();
+
     img {
       margin-bottom: 20px;
     }
@@ -64,6 +65,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      & .btn {
+        .signup-btn(@button-bg, @white, 10px);
+        .add-flex();
+        .flex-layout(center, center);
+      }
     }
   }
 }// home

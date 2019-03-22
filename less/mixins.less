@@ -1,1 +1,14 @@
 // Mixins in here
+.add-flex(@direction: row; @justify: start) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.flex-center-y {
+    align-items: center;
+}
+
+.dashed-border {
+    border: 2px dashed @silver;
+}

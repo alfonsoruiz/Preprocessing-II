@@ -1,1 +1,16 @@
 // Navigation Styles here
+.home {
+    nav {
+        padding: 30px 0;
+        border-bottom: @dashed-border;
+        & .container {
+            .add-flex(@justify: space-between);
+            .flex-center-y();
+        }
+
+        & .nav-links a{
+            margin-right: 30px;
+            color: @shark;
+        }
+    }
+}
